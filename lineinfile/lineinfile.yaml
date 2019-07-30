@@ -1,0 +1,8 @@
+-
+  name: copy pattern to file if doesnt exist
+  hosts: ansibletarget2
+  tasks:
+    -
+      lineinfile:
+          path: /home/osboxes/test/file1
+          line: 'nameserver 10.0.81.90'
