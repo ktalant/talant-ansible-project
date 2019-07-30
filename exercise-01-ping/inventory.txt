@@ -1,3 +1,7 @@
 # inventory file
 ansibletarget1 ansible_host=10.0.0.16 ansible_connection=ssh ansible_user=osboxes ansible_ssh_pass=talant122
 ansibletarget2 ansible_host=10.0.0.160 ansible_connection=ssh ansible_user=osboxes ansible_ssh_pass=talant122
+
+car_model=BMW X3
+country=Kyrgyzstan
+title=Systems Engineer

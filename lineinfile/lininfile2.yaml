@@ -1,0 +1,10 @@
+-
+  name: put line in a file
+  hosts: ans_group
+  vars:
+    ns_ip: 10.0.0.12
+  tasks:
+    -
+      lineinfile:
+        path: /tmp/newfile.txt
+        line: 'nameserver {{ ns_ip }}'

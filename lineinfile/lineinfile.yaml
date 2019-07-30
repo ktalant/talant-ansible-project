@@ -6,3 +6,23 @@
       lineinfile:
           path: /home/osboxes/test/file1
           line: 'nameserver 10.0.81.90'
+
+-
+  name: Update servers
+  hosts: ansibletarget1
+  tasks:
+    -
+      lineinfile:
+        path: /tmp/file2
+        line: 'nameserver 10.0.40.155'
+
+
+-
+  name: copy line to file
+  hosts: ans_group
+  vars:
+    new_line1: 'This is variable line'
+  tasks:
+    - lineinfile:
+        path: /tmp/file3
+        line: '{{new_line1}}'

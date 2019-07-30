@@ -1,0 +1,17 @@
+-
+  name: Copy server ips to hosts file
+  hosts: ans_group
+  vars:
+    db_server1: 10.0.0.22
+    db_server2: 10.0.0.123
+
+  tasks:
+    -
+      lineinfile:
+        path: /tmp/file4
+        line: '{{db_server1,db_server2}}'
+    -
+      name: Adding additional variables
+      lineinfile:
+        path: /tmp/file3
+        line: 'I am from {{ country }}, and my car model is {{ car_model }}'
