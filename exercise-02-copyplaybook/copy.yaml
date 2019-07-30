@@ -1,0 +1,9 @@
+-
+  name: Ansible copy yaml file
+  hosts: all
+  tasks:
+    - name: Copies files to remote servers
+      copy:
+        src: /tmp/newfile.txt
+        dest: /tmp/newfile.txt
+        
