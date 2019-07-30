@@ -1,0 +1,8 @@
+-
+  name: Ping yaml file
+  hosts: all
+  tasks:
+    - name: Ping remote servers
+      ping:
+
+        

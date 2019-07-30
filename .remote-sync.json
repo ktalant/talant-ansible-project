@@ -1,0 +1,19 @@
+{
+  "logger": {
+    "title": "Remote Sync"
+  },
+  "uploadOnSave": true,
+  "useAtomicWrites": false,
+  "deleteLocal": false,
+  "hostname": "10.0.0.72",
+  "port": "22",
+  "target": "/home/osboxes/talant-ansible-project",
+  "ignore": [
+    ".remote-sync.json",
+    ".git/**"
+  ],
+  "username": "osboxes",
+  "password": "talant122",
+  "watch": [],
+  "transport": "scp"
+}
